@@ -4,8 +4,13 @@
 \alias{PlotPerSinkSourceContribution}
 \title{Plot source contribution per sink}
 \usage{
-PlotPerSinkSourceContribution(SourceNames, source_contribution,
-  sink_name = "Example", dir_path, save_plot)
+PlotPerSinkSourceContribution(
+  SourceNames,
+  source_contribution,
+  sink_name = "Example",
+  dir_path,
+  save_plot
+)
 }
 \description{
 Plot source contribution per sink

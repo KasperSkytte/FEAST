@@ -4,8 +4,15 @@
 \alias{FEAST}
 \title{A scalable algorithm for quantifying the origins of complex microbial communities}
 \usage{
-FEAST(C, metadata, EM_iterations = 1000, COVERAGE = NULL,
-  different_sources_flag = 1)
+FEAST(
+  C,
+  metadata,
+  EM_iterations = 1000,
+  COVERAGE = NULL,
+  different_sources_flag,
+  dir_path,
+  outfile
+)
 }
 \arguments{
 \item{C}{An \eqn{m} by \eqn{n} count matrix, where \eqn{m} is the number samples and \eqn{n} is the number of taxa.}
@@ -24,7 +31,11 @@ same id (between 1 - number of sinks in the data). Note that these names must be
 \item{COVERAGE}{A numeric value indicating the rarefaction depth (default = minimal sequencing depth within each group of sink
 and its corresponding sources).}
 
-\item{different_sources_flag}{A boolian value indicating the source-sink assignment.
+\item{different_sources_flag}{A boolian value indicating the source-sink assignment.}
+
+\item{dir_path}{A path to an output .txt file.}
+
+\item{outfile}{the prefix for saving the output file.
 different_sources_flag = 1 if different sources are assigned to each sink , otherwise = 0.}
 }
 \value{

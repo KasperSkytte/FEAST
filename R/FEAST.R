@@ -106,6 +106,8 @@ FEAST <- function(C, metadata, EM_iterations = 1000, COVERAGE = NULL ,different_
       train.ix <- which(metadata$SourceSink=='Source')
       test.ix <- which(metadata$SourceSink=='Sink' & metadata$id == Ids[it])
     }
+    if(length(test.ix) == 0)
+      next
 
     ###7. Set the number of sources per sink
     num_sources <- length(train.ix)

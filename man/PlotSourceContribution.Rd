@@ -4,8 +4,15 @@
 \alias{PlotSourceContribution}
 \title{PlotSourceContribution}
 \usage{
-PlotSourceContribution(SinkNames, SourceNames, Same_sources_flag,
-  mixing_proportions, dir_path, Plot_title = "Example", N)
+PlotSourceContribution(
+  SinkNames,
+  SourceNames,
+  Same_sources_flag,
+  mixing_proportions,
+  dir_path,
+  Plot_title = "Example",
+  N
+)
 }
 \arguments{
 \item{SinkNames}{A vector with the sink names to plot.}
